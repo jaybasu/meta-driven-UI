@@ -24,7 +24,7 @@ export class UiService {
     return this.http.get<UiSchema>(this.uiSchemaUrl).pipe(
       catchError((error) => {
         console.error('Error fetching UI schema:', error);
-        return of({
+        return of<UiSchema>({
           type: 'page',
           children: [
             { type: 'error', message: 'Failed to load UI configuration.' },
