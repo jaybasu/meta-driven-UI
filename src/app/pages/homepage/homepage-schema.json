@@ -1,0 +1,32 @@
+{
+    "type": "page",
+    "children": [
+      {
+        "type": "header",
+        "title": "ASPEN",
+        "subtitle": "Advanced Solutions Partner Enablement Network",
+        "style": {
+          "backgroundImage": "url('/assets/header-background.jpg')",
+          "backgroundSize": "cover"
+        }
+      },
+      {
+        "type": "section",
+        "title": "One Source for Advanced Solutions",
+        "content": "Aspen trees have a central, interconnected root system, giving individual trees greater strength and stability. Our TD SYNNEX Advanced Solutions Partner Enablement Network, or ASPEN, brings together a multitude of resources that form a strong foundation for partner growth in Advanced Solutions. Just as aspen trees are unified by an expansive root network, ASPEN connects the resources, solutions and training to streamline your business growth.",
+        "image": "/assets/aspen-trees.jpg"
+      },
+      {
+        "type": "section",
+        "title": "Key Needs of the Technology Ecosystem",
+        "content": "According to TD SYNNEX's Direction of Technology Report, simple tech and transactional solutions matter when needed. When asked what factors matter to them most when selecting a distribution partner like TD SYNNEX, most respondents identified simplified, specialized tech solutions (61%), followed by ease of transacting business (55%) and business enablement (48%).",
+        "layout": "two-column"
+      },
+      {
+        "type": "button",
+        "label": "Learn More",
+        "action": "learnMore",
+        "icon": "/assets/learn-more-icon.svg"
+      }
+    ]
+  }

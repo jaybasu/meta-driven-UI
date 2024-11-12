@@ -16,7 +16,7 @@ export interface UiSchema {
 
 @Injectable({ providedIn: 'root' })
 export class UiService {
-  private uiSchemaUrl = 'assets/ui-schema.json';
+  private uiSchemaUrl = 'homepage-schema.json';
 
   constructor(private http: HttpClient) {}
 
