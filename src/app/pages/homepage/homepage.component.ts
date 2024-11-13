@@ -16,12 +16,12 @@ const componentMap: { [key: string]: any } = {
 @Component({
   selector: 'app-dynamic-ui',
   standalone: true,
+  templateUrl: './homepage.component.html',
+  styleUrl: './homepage.component.scss',
   imports: [CommonModule],
-  template: `
-    <ng-container #container></ng-container>
-  `,
 })
 export class DynamicUiComponent implements OnInit {
+
   @ViewChild('container', { read: ViewContainerRef })
   container!: ViewContainerRef;
 
@@ -40,7 +40,9 @@ export class DynamicUiComponent implements OnInit {
 
   createComponent(element: UiElement) {
     const componentType = componentMap[element.type];
+    console.log(componentType);
     if (componentType) {
+      console.log ("doneYes");
       // Directly create the component using ViewContainerRef
       const componentRef = this.container.createComponent(componentType);
       Object.assign(componentRef.instance as any, element);
